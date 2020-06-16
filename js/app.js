@@ -18,7 +18,7 @@ Object.onclick = guessingGame;
 
 //Start guessing game
 function guessingGame(){
-  alert('Answers to questions are Yes or No.');
+  alert('Answers to questions are Yes or No. Good luck ' + userName + '!');
   question1();
   question2();
   question3();
