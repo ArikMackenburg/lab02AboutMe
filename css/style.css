@@ -1,0 +1,36 @@
+* {
+    font-family: monospace;
+}
+body {
+    max-width: 960px;
+    margin: auto;
+}
+h1 {
+    font-size: 50px;
+    margin-left: 10px;
+}
+header li{
+    display: inline-block;
+    padding: 10px;
+}
+header {
+    background-color: red;
+}
+main {
+    background-color: lightgray;
+}
+section {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px;
+    max-width: 45%;
+}
+h2 {
+    font-size: 20px;
+}
+button {
+    padding: 10px;
+}
+#work {
+    float: right;
+}
