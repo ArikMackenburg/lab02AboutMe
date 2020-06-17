@@ -1,12 +1,12 @@
 'use strict';
-console.log('app.js is connected.');
 
 
-var userName = prompt('what is your name?');
-console.log(userName);
+
+var userName = prompt('What is your name?');
+
 
 function greetUser(){
-  if (userName === String){
+  if (typeof(userName) === 'string'){
     document.getElementById('greeting').innerHTML = ('Welcome ' + userName + '!');
   } else {
     document.getElementById('greeting').innerHTML = ('Welcome');
@@ -14,7 +14,7 @@ function greetUser(){
 }
 greetUser();
 
-Object.onclick = guessingGame;
+
 
 //Start guessing game
 function guessingGame(){
@@ -25,6 +25,11 @@ function guessingGame(){
   question4();
   question5();
 }
+
+
+
+var gameButton = document.getElementById('gameButton');
+gameButton.addEventListener('click',guessingGame);
 
 
 //Question1 Was I born in IA?
