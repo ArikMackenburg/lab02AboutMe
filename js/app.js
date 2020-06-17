@@ -67,7 +67,7 @@ function question3(){
   if(allenIverson === 'yes' || allenIverson === 'y') {
     alert('Correct, I\'m an utter failure!');
   }else{
-    alert('Glad you think highly of me but unfortunately that is incorrect.');
+    alert('Bruhhh.');
   }
 }
 
