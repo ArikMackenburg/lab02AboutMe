@@ -139,6 +139,7 @@ function question6(){
       // eslint-disable-next-line eqeqeq
       if(input6 == 15){
         alert('Lucky guess');
+        answer6 = input6;
       }if (input6 > 15 && i < 2){
         input6 = alert('Try lower');
       }
@@ -152,8 +153,7 @@ function question6(){
       }
     }
   }
-  answer6 = input6;
-  console.log(answer6);
+  //console.log(answer6);
   return answer6;
 }
 //Question 7 Can you name any of my favorite musical artists?
