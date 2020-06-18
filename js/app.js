@@ -124,7 +124,6 @@ function question5(){
 
 //Question 6
 function question6(){
-  var i = 0;
   var input6 = prompt('Im thinking of a number can you guess what it is? I\'ll give you 4 try\'s');
   console.log(input6);
   // eslint-disable-next-line eqeqeq
@@ -132,19 +131,37 @@ function question6(){
     alert('Lucky guess');
     answer6 = input6;
     console.log(answer6);
+    return answer6;
   }
   else{
-    for( i = 0; i < 3; i++) {
-      input6 = prompt('Try again');
-      // eslint-disable-next-line eqeqeq
-      if(input6 == 15){
-        alert('Lucky guess');
-        answer6 = input6;
-      }if (input6 > 15 && i < 2){
-        input6 = alert('Try lower');
+    if (input6 > 15){
+      input6 = alert('A little lower');
+      loop6();
+    }
+    if(input6 < 15){
+      input6 = alert('A little higher');
+      loop6();
+    }
+  }
+}
+
+
+function loop6(){
+  var i = 0;
+  for( i = 0; i < 3; i++) {
+    var input6 = prompt('Try again');
+    // eslint-disable-next-line eqeqeq
+    if(input6 == 15){
+      alert('Lucky guess');
+      answer6 = input6;
+      break;
+    }
+    else{
+      if (input6 > 15 && i < 2){
+        input6 = alert('A little lower');
       }
       if(input6 < 15 && i < 2){
-        input6 = alert('Try higher');
+        input6 = alert('A little higher');
       }
       else{
         (!input6);
