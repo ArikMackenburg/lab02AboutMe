@@ -26,6 +26,7 @@ var answer6;
 
 //Start guessing game
 function guessingGame(){
+  quizScore = 0;
   if (typeof(userName) === 'string'){
     alert('Answers to questions are Yes or No. Good luck ' + userName + '!');
   } else {
@@ -126,31 +127,50 @@ function question6(){
   var i = 0;
   var input6 = prompt('Im thinking of a number can you guess what it is? I\'ll give you 4 try\'s');
   console.log(input6);
-  while(i < 3){
-    input6 = prompt('Try again');
-    i++;
-    if(!input6){
-      answer6 = 0;
-      break;
-    }
-
-    if(input6 === 15){
-      alert('Lucky guess');
-      answer6 = input6;
-      break;
-    }
-
-    else {
-      if(input6 < 15){
-        alert('Try a little higher');
+  // eslint-disable-next-line eqeqeq
+  if(input6 == 15){
+    alert('Lucky guess');
+    answer6 = input6;
+    console.log(answer6);
+  }
+  else{
+    for( i = 0; i < 3; i++) {
+      input6 = prompt('Try again');
+      // eslint-disable-next-line eqeqeq
+      if(input6 == 15){
+        alert('Lucky guess');
+      }if (input6 > 15 && i < 2){
+        input6 = alert('Try lower');
       }
-      if(input6 > 15){
-        alert('Try a little lower');
+      if(input6 < 15 && i < 2){
+        input6 = alert('Try higher');
+      }
+      else{
+        (!input6);
+        input6 = 0;
+        break;
       }
     }
   }
+  answer6 = input6;
+  console.log(answer6);
   return answer6;
 }
+//Question 7 Can you name any of my favorite musical artists?
+//var musicArtists = ['Jedi Mind Tricks','Big L','Slaughterhouse','CunnninLynguists','Dave East','Merkules','Jarren Benton','Chris Webby','Ice Cube','Wu-Tang']
+// function question7(){
+//   var i = 0;
+//   var input7 = prompt('Can you name any of my favorite musical artists?');
+// }
+
+
+
+
+
+
+
+
+
 //Grade Quiz
 var answerKey = ['n','n','y','y','y',15];
 var answerKey1 = ['no','no','yes','yes','yes',15];
@@ -186,7 +206,8 @@ function gradeQuiz(){
     console.log('Answer to question # 5 was incorrect');
   }
 
-  if(answer6 === answerKey[5]) {
+  // eslint-disable-next-line eqeqeq
+  if(answer6 == answerKey[5]) {
     quizScore += 1;
   }else{
     console.log('Answer to question # 6 was incorrect');
@@ -195,5 +216,4 @@ function gradeQuiz(){
   document.getElementById('quizScore').innerHTML = quizScore;
 
   return quizScore;
-
 }
