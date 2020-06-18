@@ -23,6 +23,7 @@ var allenIverson;
 var answer4;
 var answer5;
 var answer6;
+var answer7;
 
 //Start guessing game
 function guessingGame(){
@@ -37,6 +38,7 @@ function guessingGame(){
   question4();
   question5();
   question6();
+  question7();
   gradeQuiz();
 }
 
@@ -154,7 +156,7 @@ function loop6(){
     if(input6 == 15){
       alert('Lucky guess');
       answer6 = input6;
-      break;
+      i = 3;
     }
     else{
       if (input6 > 15 && i < 2){
@@ -174,11 +176,31 @@ function loop6(){
   return answer6;
 }
 //Question 7 Can you name any of my favorite musical artists?
-//var musicArtists = ['Jedi Mind Tricks','Big L','Slaughterhouse','CunnninLynguists','Dave East','Merkules','Jarren Benton','Chris Webby','Ice Cube','Wu-Tang']
-// function question7(){
-//   var i = 0;
-//   var input7 = prompt('Can you name any of my favorite musical artists?');
-// }
+var musicArtists = ['Jedi Mind Tricks','Big L','Slaughterhouse','CunnninLynguists','Dave East','Merkules','Jarren Benton','Chris Webby','Ice Cube','Wu-Tang'];
+var lowerCaseArtists = [];
+for (var y = 0; y < musicArtists.length; y++) {
+  lowerCaseArtists.push(musicArtists[y].toLowerCase());
+}
+function question7(){
+  var i = 0;
+  while (i<6){
+    var input7 = prompt('Can you name any of my favorite musical artists? I\'ll give you 6 chances.');
+    var lowerInput7 = input7.toLowerCase();
+    for (var x = 0; x < lowerCaseArtists.length; x++){
+      if (lowerInput7 === lowerCaseArtists[x]){
+        alert('Correct!');
+        i = 6;
+        answer7 = 'yes';
+      } //close if under for
+    } //close for
+    if (i !==6){
+      alert('Try again.');
+    } //close if under while
+    i ++;
+  } //close while
+  alert('Quiz completed.');
+  return answer7;
+} //close function
 
 
 
@@ -189,45 +211,51 @@ function loop6(){
 
 
 //Grade Quiz
-var answerKey = ['n','n','y','y','y',15];
+var answerKey = ['n','n','y','y','y',15,'yes'];
 var answerKey1 = ['no','no','yes','yes','yes',15];
 // console.log(answerKey);
 function gradeQuiz(){
   if(answer1 === answerKey[0] || answer1 === answerKey1[0]) {
-    quizScore += 1;
+    quizScore++;
   }else{
     console.log('Answer to question # 1 was incorrect');
   }
 
   if(answer2 === answerKey[1] || answer2 === answerKey1[1]) {
-    quizScore +=1;
+    quizScore++;
   }else{
     console.log('Answer to question # 2 was incorrect');
   }
 
   if(allenIverson === answerKey[2] || allenIverson === answerKey1[2]) {
-    quizScore += 1;
+    quizScore++;
   }else{
     console.log('Answer to question # 3 was incorrect');
   }
 
   if(answer4 === answerKey[3] || answer4 === answerKey1[3]) {
-    quizScore += 1;
+    quizScore++;
   }else{
     console.log('Answer to question # 4 was incorrect');
   }
 
   if(answer5 === answerKey[4] || answer5 === answerKey1[4]) {
-    quizScore += 1;
+    quizScore++;
   }else{
     console.log('Answer to question # 5 was incorrect');
   }
 
   // eslint-disable-next-line eqeqeq
   if(answer6 == answerKey[5]) {
-    quizScore += 1;
+    quizScore++;
   }else{
     console.log('Answer to question # 6 was incorrect');
+  }
+
+  if(answer7 === answerKey[6]) {
+    quizScore++;
+  }else{
+    console.log('Answer to question # 7 was incorrect');
   }
 
   document.getElementById('quizScore').innerHTML = quizScore;
