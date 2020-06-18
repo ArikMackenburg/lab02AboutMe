@@ -149,7 +149,7 @@ function question6(){
 function loop6(){
   var i = 0;
   for( i = 0; i < 3; i++) {
-    var input6 = prompt('Try again');
+    var input6 = prompt('Guess again');
     // eslint-disable-next-line eqeqeq
     if(input6 == 15){
       alert('Lucky guess');
