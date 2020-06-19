@@ -183,7 +183,7 @@ for (var y = 0; y < musicArtists.length; y++) {
 }
 function question7(){
   var i = 0;
-  while (i<6){
+  while (i < 6){
     var input7 = prompt('Can you name any of my favorite musical artists? I\'ll give you 6 chances.');
     var lowerInput7 = input7.toLowerCase();
     for (var x = 0; x < lowerCaseArtists.length; x++){
@@ -193,7 +193,7 @@ function question7(){
         answer7 = 'yes';
       } //close if under for
     } //close for
-    if (i !==6){
+    if (i !== 6){
       alert('Try again.');
     } //close if under while
     i ++;
