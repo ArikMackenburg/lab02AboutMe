@@ -215,3 +215,8 @@ footer {
 #projects:hover {
     overflow: scroll;
 }
+#vid {
+    margin-top: -650px;
+    float: left;
+    
+}
