@@ -9,7 +9,7 @@
 body {
     max-width: 960px;
     margin: auto;
-    /* background-color: black; */
+    
     background-image: url(https://raw.githubusercontent.com/ArikMackenburg/lab02AboutMe/master/images/nebula.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -26,7 +26,7 @@ header li, footer li{
     text-decoration: underline;
 }
 header {
-    /* background-image: url(../../images/pink.png); */
+   
     box-shadow: 2px 2px 2px black;
     border-radius: 10px;
     background-color: rgba(193, 100, 255, 0.2);
@@ -34,13 +34,7 @@ header {
     position: relative;
     right: 120px;
 }
-/* main { */
-    /* background-color: lightgray; */
-    /* background-image: url(../../images/nebula.png); */
-    /* padding-bottom:100px; */
-    /* margin-top: -10px; */
-    /* padding: 300px; */
-/* } */
+
 section {
     padding: 20px;
     border-radius: 10px;
@@ -48,15 +42,11 @@ section {
     max-width: 45%;
     margin-left: 20px;
     background-color: rgba(193, 100, 255, 0.2);
-    /* opacity: 0.2; */
+    
     margin-top: 10px;
-    /* float: left ; */
+   
 }
 
-/* h2 {
-    font-size: 30px;
-    margin-left: 25px;
-} */
 button {
     padding: 10px;
     border-radius: 10px;
@@ -67,17 +57,7 @@ button {
     border: hidden;
     margin-bottom: 5px;
 }
-/* footer { */
-    /* background-color: white; */
-    /* padding: 30px; */
-    /* background-color: rgba(255, 255, 255,0.2); */
-    /* border-radius: 10px;
-    box-shadow: 2px 2px 2px black;
-    width: 1200px !important;
-    position: relative;
-    right: 120px; */
-    /* color: white; */
-/* } */
+
 #quizResults {
     text-align: center;
     max-width: 15%;
@@ -102,10 +82,7 @@ h3 {
     margin-left: 150px;
 }
 
-/* main section{
-    background-color:#ffffff;
-    opacity: 0.3;
-} */
+
 
 #dbz {
     float: left;
@@ -114,73 +91,7 @@ h3 {
     bottom: 675px;
 
 }
-/* td img {
-    width: 80%;
-    
-    border-radius: 5px;
-    margin-left: 25px;
-    margin-bottom: 10px;
-    margin-top: 10px;
 
-    
-
-} */
-/* #pac {
-    margin-bottom: 30px;
-} */
-/* table { */
-    /* background-color: rgba(193, 100, 255, 0.2); */
-    /* border-radius: 10px;
-    vertical-align: top;
-    position: relative;
-    right: 96px; */
-    /* border-radius: 20px; */
-    /* box-shadow: 2px 2px 2px black; */
-    
-    
-/* } */
-/* #tableH3 {
-    background-color: rgba(193, 100, 255, 0.2);
-    border-radius: 10px;
-    text-align: center;
-    display: inline-block;
-    border-radius: 5px;
-    padding: 5px;
-    box-shadow: 2px 2px 2px black;
-    
-   
-} */
-/* td { */
-    /* border: 2px solid black; */
-    /* background-color: rgba(193, 100, 255, 0.2);
-    box-shadow: 2px 2px 2px black;
-    margin: 10px;
-    display: inline-block; */
-    
-   
-/* 
-} */
-/* td.empty {
-    background-color: transparent !important;
-    margin: 10px;
-    box-shadow: none !important;
-} */
-/* #topLeft {
-    border-radius: 10px 0px 0px 0px;
-
-}
-#topRight {
-    border-radius: 0px 10px 0px 0px;
-}
-#midLeft {
-    border-radius: 0px 0px 0px 10px;
-}
-#midRight {
-    border-radius: 0px 0px 10px 0px;
-}
-#nip {
-    border-radius: 0px 0px 10px 10px;
-} */
 footer {
     padding: 10px;
 
