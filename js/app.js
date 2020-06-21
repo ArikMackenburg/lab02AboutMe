@@ -55,7 +55,6 @@ function question1(){
 
   if(answer1 === 'no' || answer1 === 'n') {
     alert('Correct, I was born out in CA!');
-    // quizScore += 1;
   }else{
     alert('Were you even paying attention fam?');
   }
@@ -70,7 +69,6 @@ function question2(){
 
   if(answer2 === 'no' || answer2 === 'n') {
     alert('Correct, I find drawing to be a good way to take my mind off things.');
-    // quizScore += 1;
   }else{
     alert('Nope.');
   }
@@ -85,7 +83,6 @@ function question3(){
 
   if(allenIverson === 'yes' || allenIverson === 'y') {
     alert('Correct, I\'m an utter failure!');
-    // quizScore += 1;
   }else{
     alert('Incorrect');
   }
@@ -101,7 +98,6 @@ function question4(){
 
   if(answer4 === 'yes' || answer4 === 'y') {
     alert('You bet I do!');
-    // quizScore += 1;
   }else{
     alert('Stop slandering my name.');
   }
@@ -117,7 +113,6 @@ function question5(){
 
   if(answer5 === 'yes' || answer5 === 'y') {
     alert('Correct! The amount of cereal we made in an hour was absurd!');
-    // quizScore += 1;
   }else{
     alert('Well I didn\'t just eat it all.');
   }
@@ -172,7 +167,6 @@ function loop6(){
       }
     }
   }
-  //console.log(answer6);
   return answer6;
 }
 //Question 7 Can you name any of my favorite musical artists?
@@ -191,16 +185,16 @@ function question7(){
         alert('Correct!');
         i = 6;
         answer7 = 'yes';
-      } //close if under for
-    } //close for
+      }
+    }
     if (i !== 6){
       alert('Try again.');
-    } //close if under while
+    }
     i ++;
-  } //close while
+  }
   alert('Quiz completed.');
   return answer7;
-} //close function
+}
 
 
 
@@ -213,7 +207,6 @@ function question7(){
 //Grade Quiz
 var answerKey = ['n','n','y','y','y',15,'yes'];
 var answerKey1 = ['no','no','yes','yes','yes',15];
-// console.log(answerKey);
 function gradeQuiz(){
   if(answer1 === answerKey[0] || answer1 === answerKey1[0]) {
     quizScore++;
