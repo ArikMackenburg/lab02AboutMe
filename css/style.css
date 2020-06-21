@@ -10,7 +10,7 @@ body {
     max-width: 960px;
     margin: auto;
     /* background-color: black; */
-    background-image: url(../../images/nebula.jpg);
+    background-image: url(../../../images/nebula.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     
